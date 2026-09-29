@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Isabel Tse · DH 101 Digital Humanities Portfolio</title>
+  <meta name="description" content="Digital Humanities portfolio, studio makes, critical reflections, CV, and AI methodology by Isabel Tse for DH 101 Spring 2026.">
+  
+  <!-- Anti-flash inline script for dark mode -->
+  <script>
+    (function() {
+      const savedTheme = localStorage.getItem('dh101-theme');
+      const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+      const theme = savedTheme || (prefersDark ? 'dark' : 'light');
+      document.documentElement.setAttribute('data-theme', theme);
+    })();
+  </script>
+
+  <!-- Minimalist Stylesheet -->
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- =========================================================================
+       Site Header / Masthead
+       ========================================================================= -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <a href="#overview" class="brand-name">Isabel Tse</a>
+        <span class="brand-subtitle">DH 101 · Spring 2026</span>
+      </div>
+
+      <div class="header-controls">
+        <button id="theme-toggle-btn" class="theme-toggle" aria-label="Toggle light and dark mode">
+          <svg id="theme-icon" viewBox="0 0 24 24">
+            <!-- Dynamic SVG icon inserted by app.js -->
+          </svg>
+          <span id="theme-toggle-label">Dark</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Tab Navigation -->
+    <nav class="nav-wrapper" aria-label="Course Portfolio Navigation">
+      <div class="container">
+        <ul class="nav-tabs" role="tablist">
+          <li class="nav-tab-item" role="presentation">
+            <button class="nav-tab-btn active" data-tab="overview" role="tab" aria-selected="true" aria-controls="tab-panel-overview">
+              Overview
+            </button>
+          </li>
+          <li class="nav-tab-item" role="presentation">
+            <button class="nav-tab-btn" data-tab="makes" role="tab" aria-selected="false" aria-controls="tab-panel-makes">
+              Makes <span class="tab-badge">12</span>
+            </button>
+          </li>
+          <li class="nav-tab-item" role="presentation">
+            <button class="nav-tab-btn" data-tab="pages" role="tab" aria-selected="false" aria-controls="tab-panel-pages">
+              Pages <span class="tab-badge">5</span>
+            </button>
+          </li>
+          <li class="nav-tab-item" role="presentation">
+            <button class="nav-tab-btn" data-tab="reflections" role="tab" aria-selected="false" aria-controls="tab-panel-reflections">
+              Reflections <span class="tab-badge">13</span>
+            </button>
+          </li>
+          <li class="nav-tab-item" role="presentation">
+            <button class="nav-tab-btn" data-tab="cv" role="tab" aria-selected="false" aria-controls="tab-panel-cv">
+              CV <span class="tab-badge">Resume</span>
+            </button>
+          </li>
+          <li class="nav-tab-item" role="presentation">
+            <button class="nav-tab-btn" data-tab="how-i-use-ai" role="tab" aria-selected="false" aria-controls="tab-panel-how-i-use-ai">
+              How I Use AI <span class="tab-badge">Ethics & Log</span>
+            </button>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <!-- =========================================================================
+       Main Content Container (Tab Switcher)
+       ========================================================================= -->
+  <main class="container">
+
+    <!-- -----------------------------------------------------------------------
+         TAB 1: Overview (Home)
+         ----------------------------------------------------------------------- -->
+    <section id="tab-panel-overview" class="tab-content-panel active" role="tabpanel" aria-labelledby="tab-overview">
+      <div class="hero-card">
+        <div class="hero-greeting">Digital Humanities Portfolio & Fieldwork</div>
+        <h1 class="hero-headline">Critical Making, Cultural Analytics & Algorithmic Inquiry.</h1>
+        <p class="hero-bio">
+          Hello, I am <strong>Isabel Tse</strong>. Welcome to my semester-long working portfolio for <strong>DH 101</strong> (Spring 2026). Here I investigate the cultural and material conditions of computation through reverse-engineering, distant reading, creative artifacts, and rigorous ethical accounting of artificial intelligence.
+        </p>
+        <div class="hero-actions">
+          <button class="btn btn-primary" data-navigate="makes">
+            Explore Studio Makes →
+          </button>
+          <button class="btn btn-secondary" data-navigate="how-i-use-ai">
+            Review AI Methodology
+          </button>
+          <button class="btn btn-secondary" data-navigate="cv">
+            Curriculum Vitae
+          </button>
+        </div>
+      </div>
+
+      <div class="overview-grid">
+        <div class="summary-card" data-navigate="makes">
+          <div class="summary-card-header">
+            <span class="week-pill">Laboratory</span>
+            <span class="mini-tag">12 Makes</span>
+          </div>
+          <h2 class="summary-card-title">Weekly Makes</h2>
+          <p class="summary-card-desc">
+            Hands-on computational artifacts ranging from reverse-engineering feed algorithms and mapping global supply chains to text analysis and interactive bot design.
+          </p>
+          <span class="summary-card-link">View all makes →</span>
+        </div>
+
+        <div class="summary-card" data-navigate="reflections">
+          <div class="summary-card-header">
+            <span class="week-pill">Essays</span>
+            <span class="mini-tag">13 Weeks</span>
+          </div>
+          <h2 class="summary-card-title">Critical Reflections</h2>
+          <p class="summary-card-desc">
+            Weekly philosophical responses tackling questions of authenticity, authorship, ghost labor, ecological sustainability, and speculative computational futures.
+          </p>
+          <span class="summary-card-link">Read reflections →</span>
+        </div>
+
+        <div class="summary-card" data-navigate="how-i-use-ai">
+          <div class="summary-card-header">
+            <span class="week-pill">Methodology</span>
+            <span class="mini-tag">Interactive Log</span>
+          </div>
+          <h2 class="summary-card-title">How I Use AI</h2>
+          <p class="summary-card-desc">
+            Four foundational principles governing generative AI interaction in humanistic scholarship, coupled with a transparent, auditable prompt-and-decision log.
+          </p>
+          <span class="summary-card-link">Explore AI log →</span>
+        </div>
+
+        <div class="summary-card" data-navigate="cv">
+          <div class="summary-card-header">
+            <span class="week-pill">Profile</span>
+            <span class="mini-tag">Printable</span>
+          </div>
+          <h2 class="summary-card-title">Curriculum Vitae</h2>
+          <p class="summary-card-desc">
+            Academic coursework, research interests in human-AI interaction, technical tools (Python, Voyant, Gephi, web technologies), and project history.
+          </p>
+          <span class="summary-card-link">View CV →</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- -----------------------------------------------------------------------
+         TAB 2: Makes (Studio Artifacts)
+         ----------------------------------------------------------------------- -->
+    <section id="tab-panel-makes" class="tab-content-panel" role="tabpanel">
+      <div class="section-masthead">
+        <div class="section-tag">Studio & Laboratory</div>
+        <h2 class="section-title">Weekly Makes</h2>
+        <p class="section-desc">
+          Weekly digital humanities experiments, reverse-engineered platforms, generative media, and technical artifacts created throughout the semester.
+        </p>
+      </div>
+
+      <!-- Toolbar: Search & Category Chips -->
+      <div class="toolbar">
+        <div class="search-input-wrapper">
+          <svg class="search-icon" viewBox="0 0 24 24">
+            <path d="M21 21l-4.35-4.35M19 11a8 8 0 11-16 0 8 8 0 0116 0z" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"/>
+          </svg>
+          <input type="text" id="makes-search-input" class="search-input" placeholder="Search makes by tool, concept, or week...">
+        </div>
+        <div class="chip-filters" id="makes-filter-chips">
+          <!-- Dynamically populated by app.js -->
+        </div>
+      </div>
+
+      <!-- Cards Grid -->
+      <div class="cards-grid" id="makes-grid">
+        <!-- Dynamically populated by app.js -->
+      </div>
+    </section>
+
+    <!-- -----------------------------------------------------------------------
+         TAB 3: Pages (Course Frameworks & Reference)
+         ----------------------------------------------------------------------- -->
+    <section id="tab-panel-pages" class="tab-content-panel" role="tabpanel">
+      <div class="section-masthead">
+        <div class="section-tag">Documentation & Context</div>
+        <h2 class="section-title">Course Pages</h2>
+        <p class="section-desc">
+          Biographical background, universal accessibility commitments, sustainability accounting, and technical guides.
+        </p>
+      </div>
+
+      <div class="pages-layout">
+        <!-- Sidebar Navigation -->
+        <aside class="pages-sidebar">
+          <ul class="pages-nav-list" id="pages-sidebar-list">
+            <!-- Dynamically populated by app.js -->
+          </ul>
+        </aside>
+
+        <!-- Main Display Card -->
+        <article class="pages-content-area" id="pages-content-display">
+          <!-- Dynamically populated by app.js -->
+        </article>
+      </div>
+    </section>
+
+    <!-- -----------------------------------------------------------------------
+         TAB 4: Reflections (Critical Inquiries)
+         ----------------------------------------------------------------------- -->
+    <section id="tab-panel-reflections" class="tab-content-panel" role="tabpanel">
+      <div class="section-masthead">
+        <div class="section-tag">Critical Inquiries</div>
+        <h2 class="section-title">Weekly Reflections</h2>
+        <p class="section-desc">
+          Thirteen essays addressing questions of agency, authenticity, distant reading, ghost work, ecological footprint, and algorithmic culture.
+        </p>
+      </div>
+
+      <!-- Search Toolbar -->
+      <div class="toolbar">
+        <div class="search-input-wrapper">
+          <svg class="search-icon" viewBox="0 0 24 24">
+            <path d="M21 21l-4.35-4.35M19 11a8 8 0 11-16 0 8 8 0 0116 0z" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"/>
+          </svg>
+          <input type="text" id="reflections-search-input" class="search-input" placeholder="Search reflections by topic, prompt, or insight...">
+        </div>
+      </div>
+
+      <!-- Grid -->
+      <div class="cards-grid" id="reflections-grid">
+        <!-- Dynamically populated by app.js -->
+      </div>
+    </section>
+
+    <!-- -----------------------------------------------------------------------
+         TAB 5: Curriculum Vitae (CV)
+         ----------------------------------------------------------------------- -->
+    <section id="tab-panel-cv" class="tab-content-panel" role="tabpanel">
+      <div class="cv-container">
+        
+        <!-- CV Actions Toolbar -->
+        <div class="cv-topbar">
+          <span class="week-pill">Curriculum Vitae</span>
+          <div class="cv-actions">
+            <button class="btn btn-secondary" id="cv-copy-btn">
+              Copy as Text
+            </button>
+            <button class="btn btn-primary" id="cv-print-btn">
+              Print / Save PDF
+            </button>
+          </div>
+        </div>
+
+        <!-- CV Printable Body -->
+        <div id="cv-body-content">
+          <header style="margin-bottom: 2rem;">
+            <h1 class="cv-name">Isabel Tse</h1>
+            <div class="cv-subtitle">Digital Humanities Scholar & Creative Technologist</div>
+            <div class="cv-contact-row">
+              <span>Email: isabeltse@example.edu</span>
+              <span>GitHub: github.com/isabeltse</span>
+              <span>Focus: DH 101 (Spring 2026)</span>
+            </div>
+          </header>
+
+          <!-- Education -->
+          <section class="cv-section">
+            <h2 class="cv-section-title">Education</h2>
+            <div class="cv-item">
+              <div class="cv-item-header">
+                <span class="cv-item-title">Bachelor of Arts in Digital Humanities & Media Studies</span>
+                <span class="cv-item-date">Expected Spring 2026</span>
+              </div>
+              <div class="cv-item-org">Undergraduate Coursework & Research</div>
+              <ul class="cv-item-list">
+                <li><strong>Relevant Coursework:</strong> DH 101: Introduction to Digital Humanities, Critical AI Studies, Cultural Analytics & Distant Reading, Web Design & Human-Computer Interaction, Data Visualization, Algorithmic Ethics & Digital Labor.</li>
+                <li><strong>Honors & Recognition:</strong> Dean's Honors List (Multiple Terms).</li>
+              </ul>
+            </div>
+          </section>
+
+          <!-- Research Interests -->
+          <section class="cv-section">
+            <h2 class="cv-section-title">Academic & Research Interests</h2>
+            <div class="cv-item">
+              <ul class="cv-item-list">
+                <li><strong>Human-AI Interaction & Critical Making:</strong> Investigating generative models as collaborative and reflective mediums within humanistic inquiry.</li>
+                <li><strong>Distant Reading & Cultural Analytics:</strong> Computational text analysis, token distributions, and lexical drift across historical corpora.</li>
+                <li><strong>Critical Algorithm Studies:</strong> Analyzing supply chains, invisible ghost labor, and environmental costs of foundation models.</li>
+                <li><strong>Accessible Web Design:</strong> Crafting semantic, WCAG 2.1-compliant digital interfaces with neutral aesthetics.</li>
+              </ul>
+            </div>
+          </section>
+
+          <!-- Projects & Makes -->
+          <section class="cv-section">
+            <h2 class="cv-section-title">Selected Projects & Course Makes</h2>
+            
+            <div class="cv-item">
+              <div class="cv-item-header">
+                <span class="cv-item-title">DH 101 Digital Humanities Portfolio & Research Journal</span>
+                <span class="cv-item-date">Spring 2026</span>
+              </div>
+              <div class="cv-item-org">Lead Developer & Researcher</div>
+              <p class="cv-item-desc">
+                Architected an accessible, lightweight web portfolio featuring dark mode support, client-side markdown parsing, and zero external build dependencies. Documented 12 laboratory makes, 13 critical reflections, and a transparent AI usage log.
+              </p>
+            </div>
+
+            <div class="cv-item">
+              <div class="cv-item-header">
+                <span class="cv-item-title">Text & Distant Reading: 19th-Century Novel Corpus</span>
+                <span class="cv-item-date">Spring 2026</span>
+              </div>
+              <div class="cv-item-org">Corpus Analysis & Data Cleaning</div>
+              <p class="cv-item-desc">
+                Developed a Python (NLTK, Pandas) parsing pipeline to clean 25 Project Gutenberg literary texts, mapping semantic density and the co-occurrence of domestic vs. industrial vocabularies across six decades.
+              </p>
+            </div>
+
+            <div class="cv-item">
+              <div class="cv-item-header">
+                <span class="cv-item-title">Networks of Knowledge & AI Power Mapping</span>
+                <span class="cv-item-date">Spring 2026</span>
+              </div>
+              <div class="cv-item-org">Network Analysis & Gephi Visualization</div>
+              <p class="cv-item-desc">
+                Synthesized citation and funding networks across 50 landmark machine learning research papers, revealing capital concentration and institutional interlocks.
+              </p>
+            </div>
+          </section>
+
+          <!-- Technical Skills -->
+          <section class="cv-section">
+            <h2 class="cv-section-title">Technical & Scholarly Proficiencies</h2>
+            <div class="skills-tags-group">
+              <span class="skill-tag">HTML5 & Semantic Markup</span>
+              <span class="skill-tag">CSS3 & Fluid Layouts</span>
+              <span class="skill-tag">JavaScript (ES6+)</span>
+              <span class="skill-tag">Python (Pandas, NLTK)</span>
+              <span class="skill-tag">Git & GitHub</span>
+              <span class="skill-tag">Markdown</span>
+              <span class="skill-tag">Voyant Tools</span>
+              <span class="skill-tag">Gephi (Network Analysis)</span>
+              <span class="skill-tag">StoryMapJS & TimelineJS</span>
+              <span class="skill-tag">Prompt Engineering</span>
+              <span class="skill-tag">Model Attribution Auditing</span>
+              <span class="skill-tag">WCAG 2.1 AA Accessibility</span>
+            </div>
+          </section>
+
+          <!-- Community -->
+          <section class="cv-section">
+            <h2 class="cv-section-title">Community & Leadership</h2>
+            <div class="cv-item">
+              <div class="cv-item-header">
+                <span class="cv-item-title">Digital Humanities Student Collaborative</span>
+                <span class="cv-item-date">2024 – Present</span>
+              </div>
+              <div class="cv-item-org">Member & Workshop Facilitator</div>
+              <p class="cv-item-desc">
+                Facilitated peer-led workshops on open-source digital tools, critical making practices, and ethical AI attribution in undergraduate research.
+              </p>
+            </div>
+          </section>
+        </div>
+      </div>
+    </section>
+
+    <!-- -----------------------------------------------------------------------
+         TAB 6: How I Use AI (Interactive Philosophy & Auditable Log)
+         ----------------------------------------------------------------------- -->
+    <section id="tab-panel-how-i-use-ai" class="tab-content-panel" role="tabpanel">
+      <div class="section-masthead">
+        <div class="section-tag">Methodology & Ethics</div>
+        <h2 class="section-title">How I Use AI</h2>
+        <p class="section-desc">
+          My ethical framework, collaborative boundaries, and public audit log for incorporating artificial intelligence into digital humanities scholarship.
+        </p>
+      </div>
+
+      <!-- Core 4 Principles -->
+      <div class="ai-principles-grid">
+        <div class="principle-card">
+          <span class="principle-num">01 / Inquiry</span>
+          <h3 class="principle-title">Critical Inquiry</h3>
+          <p class="principle-text">
+            AI is treated as a probabilistic sounding board and experimental foil, never an authoritative oracle. Every factual assertion, citation, and suggestion is rigorously cross-examined against primary sources.
+          </p>
+        </div>
+
+        <div class="principle-card">
+          <span class="principle-num">02 / Attribution</span>
+          <h3 class="principle-title">Full Attribution</h3>
+          <p class="principle-text">
+            Every AI interaction is documented. Prompts, model versions, suggestions, and the specific human modifications made to synthetic text or code are publicly recorded.
+          </p>
+        </div>
+
+        <div class="principle-card">
+          <span class="principle-num">03 / Agency</span>
+          <h3 class="principle-title">Human Authorship</h3>
+          <p class="principle-text">
+            Core arguments, ethical positions, aesthetic decisions, and personal reflections originate strictly with the human author. AI may assist with syntax or brainstorming, but never authorial voice.
+          </p>
+        </div>
+
+        <div class="principle-card">
+          <span class="principle-num">04 / Ecology</span>
+          <h3 class="principle-title">Material Awareness</h3>
+          <p class="principle-text">
+            Continuous awareness of the physical infrastructure, water cooling, energy expenditure, and global human annotation labor required to sustain foundation models.
+          </p>
+        </div>
+      </div>
+
+      <!-- Interactive AI Log Section -->
+      <div class="ai-log-wrapper">
+        <div class="ai-log-header">
+          <div>
+            <h3 style="font-family: var(--font-serif); font-size: 1.5rem; margin-bottom: 0.25rem;">Interactive AI Use Log</h3>
+            <p style="font-size: 0.9rem; color: var(--text-secondary);">
+              Auditable records conforming to course requirements in <code>ai-log/template-ai-log.md</code>.
+            </p>
+          </div>
+          <button class="btn btn-secondary" id="copy-ai-template-btn">
+            Copy Log Template (Markdown)
+          </button>
+        </div>
+
+        <!-- Rendered Log Entries -->
+        <div id="ai-logs-container">
+          <!-- Dynamically populated by app.js -->
+        </div>
+
+        <!-- Add New Log Entry Form -->
+        <div class="add-log-box">
+          <h4 class="add-log-title">Record a New AI Use Log</h4>
+          <p style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 1rem;">
+            Entries are saved locally to your browser and automatically formatted for copying into your <code>ai-log/</code> files.
+          </p>
+          <form id="add-ai-log-form">
+            <div class="form-grid">
+              <div class="form-group">
+                <label class="form-label" for="log-tool-input">Tool Used</label>
+                <select id="log-tool-input" name="log-tool" class="form-select" required>
+                  <option value="Claude 3.5 Sonnet">Claude 3.5 Sonnet</option>
+                  <option value="GPT-4o / ChatGPT">GPT-4o / ChatGPT</option>
+                  <option value="Google Gemini / Antigravity">Google Gemini / Antigravity</option>
+                  <option value="Midjourney v6">Midjourney v6</option>
+                  <option value="Stable Diffusion">Stable Diffusion (Local)</option>
+                  <option value="Voyant / Python AI Script">Python / AI Script</option>
+                  <option value="Other Tool">Other Tool</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="log-date-input">Date</label>
+                <input type="date" id="log-date-input" name="log-date" class="form-input" required>
+              </div>
+
+              <div class="form-group full-width">
+                <label class="form-label" for="log-task-input">Task / Prompt</label>
+                <input type="text" id="log-task-input" name="log-task" class="form-input" placeholder="What task or prompt did you give the AI?" required>
+              </div>
+
+              <div class="form-group full-width">
+                <label class="form-label" for="log-suggested-input">What the AI Suggested</label>
+                <textarea id="log-suggested-input" name="log-suggested" class="form-textarea" placeholder="Summarize the model's output or suggestions..."></textarea>
+              </div>
+
+              <div class="form-group full-width">
+                <label class="form-label" for="log-decision-input">What I Accepted, Changed, or Rejected</label>
+                <textarea id="log-decision-input" name="log-decision" class="form-textarea" placeholder="Describe your critical intervention and editorial decisions..." required></textarea>
+              </div>
+
+              <div class="form-group full-width">
+                <label class="form-label" for="log-why-input">Why (Critical Rationale)</label>
+                <textarea id="log-why-input" name="log-why" class="form-textarea" placeholder="Why did you make these decisions? Connect to DH principles..."></textarea>
+              </div>
+            </div>
+
+            <button type="submit" class="btn btn-primary">
+              Save Entry & Copy Markdown
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- =========================================================================
+       Reader Modal Overlay (For Focused Reading of Makes & Reflections)
+       ========================================================================= -->
+  <div id="reader-modal-overlay" class="reader-modal-overlay" role="dialog" aria-modal="true" aria-labelledby="reader-modal-title">
+    <div class="reader-modal">
+      <div class="reader-header">
+        <div class="reader-header-info">
+          <span class="week-pill">Reader</span>
+          <h2 id="reader-modal-title" style="font-family: var(--font-serif); font-size: 1.15rem; font-weight: 600;">Document Title</h2>
+        </div>
+        <div style="display: flex; gap: 0.5rem;">
+          <button id="reader-modal-copy" class="reader-close-btn">
+            Copy Markdown
+          </button>
+          <button id="reader-modal-close" class="reader-close-btn" aria-label="Close modal">
+            ✕ Close
+          </button>
+        </div>
+      </div>
+      <div id="reader-modal-body" class="reader-body">
+        <!-- Rendered markdown inserted by app.js -->
+      </div>
+    </div>
+  </div>
+
+  <!-- =========================================================================
+       Site Footer
+       ========================================================================= -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <strong>Isabel Tse</strong> · DH 101 Digital Humanities Portfolio (Spring 2026)
+      </div>
+      <div class="footer-links">
+        <a href="#pages/about">About</a>
+        <a href="#pages/accessibility">Accessibility</a>
+        <a href="#pages/sustainability">Sustainability</a>
+        <a href="#pages/markdown-guide">Markdown Guide</a>
+        <a href="#how-i-use-ai">AI Log</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="assets/js/content.js"></script>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
+
