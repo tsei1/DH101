@@ -29,7 +29,8 @@ This repository hosts the academic and studio portfolio for **DH 101**. The port
 
 ## Features & Design System
 
-- **Minimalist Aesthetic & Neutral Palette:** Calibrated warm alabaster (`#faf9f6`), subtle linen borders (`#e8e7e1`), and rich charcoal ink (`#181816`) in light mode; warm obsidian (`#121211`) and parchment bone (`#edece8`) in dark mode.
+- **Timeless Beige with Rich Scholarly Maroon:** Natural warm ecru linen (`#F7F3EB`), soft sand (`#EBE4D5`), warm ivory pressed-paper cards (`#FCFAF6`), delicate hairline borders (`#E2DAC9`), and deep espresso ink (`#231E19`), complemented by deep scholarly maroon (`#6E1A29` oxblood/bordeaux) across active navigation tabs, week pills, buttons, card borders, and pull-quote accents. In dark mode: smoked dark walnut (`#141110`), warm dark roast (`#1C1816`), antique linen bone (`#EDE5D8`), and luminous garnet maroon (`#D0697D`).
+- **Legible Cursive & Classical Typography:** Headings set in **Cormorant Garamond** (inspired by 16th-century French Claude Garamond punchcuts), accented with **Pinyon Script** and **Alex Brush** (exceptionally legible, graceful archival cursive scripts for category flourishes, section eyebrows, and signatures), balanced by **Plus Jakarta Sans** and **JetBrains Mono**.
 - **Dark Mode Toggle:** Seamless light/dark switching with persistent state saved to `localStorage` and automatic detection of OS preference (`prefers-color-scheme`).
 - **Zero-Dependency Architecture:** Runs directly in any modern browser by double-clicking `index.html` or deploying automatically to GitHub Pages.
 - **Accessible & Responsive:** Meets WCAG 2.1 AA standards for color contrast, semantic HTML, keyboard focus rings, and mobile readability.

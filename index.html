@@ -16,6 +16,11 @@
     })();
   </script>
 
+  <!-- Google Fonts: Cormorant Garamond (Classical Serif), Pinyon Script & Alex Brush (Legible Cursive), Plus Jakarta Sans, JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Pinyon+Script&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
   <!-- Minimalist Stylesheet -->
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
@@ -28,6 +33,7 @@
     <div class="container header-inner">
       <div class="brand">
         <a href="#overview" class="brand-name">Isabel Tse</a>
+        <span class="brand-divider">/</span>
         <span class="brand-subtitle">DH 101 · Spring 2026</span>
       </div>
 
@@ -90,11 +96,12 @@
          ----------------------------------------------------------------------- -->
     <section id="tab-panel-overview" class="tab-content-panel active" role="tabpanel" aria-labelledby="tab-overview">
       <div class="hero-card">
-        <div class="hero-greeting">Digital Humanities Portfolio & Fieldwork</div>
-        <h1 class="hero-headline">Critical Making, Cultural Analytics & Algorithmic Inquiry.</h1>
+        <div class="hero-greeting"><span class="cursive-eyebrow">Digital Humanities Fieldwork &amp; Studio Journal</span></div>
+        <h1 class="hero-headline">Critical Making, Cultural Analytics <span class="cursive-ampersand">&amp;</span> Algorithmic Inquiry.</h1>
         <p class="hero-bio">
           Hello, I am <strong>Isabel Tse</strong>. Welcome to my semester-long working portfolio for <strong>DH 101</strong> (Spring 2026). Here I investigate the cultural and material conditions of computation through reverse-engineering, distant reading, creative artifacts, and rigorous ethical accounting of artificial intelligence.
         </p>
+        <div class="hero-signature">Isabel Tse</div>
         <div class="hero-actions">
           <button class="btn btn-primary" data-navigate="makes">
             Explore Studio Makes →
@@ -164,7 +171,7 @@
          ----------------------------------------------------------------------- -->
     <section id="tab-panel-makes" class="tab-content-panel" role="tabpanel">
       <div class="section-masthead">
-        <div class="section-tag">Studio & Laboratory</div>
+        <div class="section-tag"><span class="cursive-tag">Studio &amp; Laboratory</span> · Makes</div>
         <h2 class="section-title">Weekly Makes</h2>
         <p class="section-desc">
           Weekly digital humanities experiments, reverse-engineered platforms, generative media, and technical artifacts created throughout the semester.
@@ -195,7 +202,7 @@
          ----------------------------------------------------------------------- -->
     <section id="tab-panel-pages" class="tab-content-panel" role="tabpanel">
       <div class="section-masthead">
-        <div class="section-tag">Documentation & Context</div>
+        <div class="section-tag"><span class="cursive-tag">Essays &amp; Reference</span> · Pages</div>
         <h2 class="section-title">Course Pages</h2>
         <p class="section-desc">
           Biographical background, universal accessibility commitments, sustainability accounting, and technical guides.
@@ -222,7 +229,7 @@
          ----------------------------------------------------------------------- -->
     <section id="tab-panel-reflections" class="tab-content-panel" role="tabpanel">
       <div class="section-masthead">
-        <div class="section-tag">Critical Inquiries</div>
+        <div class="section-tag"><span class="cursive-tag">Critical Inquiries</span> · Weekly Reflections</div>
         <h2 class="section-title">Weekly Reflections</h2>
         <p class="section-desc">
           Thirteen essays addressing questions of agency, authenticity, distant reading, ghost work, ecological footprint, and algorithmic culture.
@@ -253,7 +260,7 @@
         
         <!-- CV Actions Toolbar -->
         <div class="cv-topbar">
-          <span class="week-pill">Curriculum Vitae</span>
+          <span class="week-pill"><span class="cursive-pill">Folio</span> · Curriculum Vitae</span>
           <div class="cv-actions">
             <button class="btn btn-secondary" id="cv-copy-btn">
               Copy as Text
@@ -268,7 +275,7 @@
         <div id="cv-body-content">
           <header style="margin-bottom: 2rem;">
             <h1 class="cv-name">Isabel Tse</h1>
-            <div class="cv-subtitle">Digital Humanities Scholar & Creative Technologist</div>
+            <div class="cv-subtitle"><span class="cursive-role">Digital Humanities Scholar &amp; Creative Technologist</span></div>
             <div class="cv-contact-row">
               <span>Email: isabeltse@example.edu</span>
               <span>GitHub: github.com/isabeltse</span>
@@ -385,7 +392,7 @@
          ----------------------------------------------------------------------- -->
     <section id="tab-panel-how-i-use-ai" class="tab-content-panel" role="tabpanel">
       <div class="section-masthead">
-        <div class="section-tag">Methodology & Ethics</div>
+        <div class="section-tag"><span class="cursive-tag">Methodology &amp; Ethics</span> · How I Use AI</div>
         <h2 class="section-title">How I Use AI</h2>
         <p class="section-desc">
           My ethical framework, collaborative boundaries, and public audit log for incorporating artificial intelligence into digital humanities scholarship.
@@ -395,7 +402,7 @@
       <!-- Core 4 Principles -->
       <div class="ai-principles-grid">
         <div class="principle-card">
-          <span class="principle-num">01 / Inquiry</span>
+          <span class="principle-num">I · Inquiry</span>
           <h3 class="principle-title">Critical Inquiry</h3>
           <p class="principle-text">
             AI is treated as a probabilistic sounding board and experimental foil, never an authoritative oracle. Every factual assertion, citation, and suggestion is rigorously cross-examined against primary sources.
@@ -403,7 +410,7 @@
         </div>
 
         <div class="principle-card">
-          <span class="principle-num">02 / Attribution</span>
+          <span class="principle-num">II · Attribution</span>
           <h3 class="principle-title">Full Attribution</h3>
           <p class="principle-text">
             Every AI interaction is documented. Prompts, model versions, suggestions, and the specific human modifications made to synthetic text or code are publicly recorded.
@@ -411,7 +418,7 @@
         </div>
 
         <div class="principle-card">
-          <span class="principle-num">03 / Agency</span>
+          <span class="principle-num">III · Agency</span>
           <h3 class="principle-title">Human Authorship</h3>
           <p class="principle-text">
             Core arguments, ethical positions, aesthetic decisions, and personal reflections originate strictly with the human author. AI may assist with syntax or brainstorming, but never authorial voice.
@@ -419,7 +426,7 @@
         </div>
 
         <div class="principle-card">
-          <span class="principle-num">04 / Ecology</span>
+          <span class="principle-num">IV · Ecology</span>
           <h3 class="principle-title">Material Awareness</h3>
           <p class="principle-text">
             Continuous awareness of the physical infrastructure, water cooling, energy expenditure, and global human annotation labor required to sustain foundation models.
