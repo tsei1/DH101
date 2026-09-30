@@ -597,6 +597,10 @@ main {
   flex-direction: column;
 }
 
+.summary-card-feature {
+  cursor: default;
+}
+
 .summary-card:hover {
   border-color: var(--maroon-border);
   border-top-color: var(--maroon-base);

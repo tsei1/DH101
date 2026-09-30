@@ -103,28 +103,28 @@ Storytelling relies as much on silence, hesitation, and omission as it does on t
     {
       id: "week05",
       weekNumber: 5,
-      title: "GIF & Remix Culture",
+      title: "Make #4: GIF and Remix Culture",
       category: "Identity & Visuals",
       tags: ["Remix", "GIF", "Authorship", "Fair Use"],
-      summary: "Investigating looping media, affective repetition, and how generative models remix public archival footage.",
-      markdown: `# Week 5 – GIF & Remix Culture
+      summary: "Outta there! A GIPHY remix using a swirling effect, meme caption, and borders to turn a still image into a continuous loop.",
+      markdown: `# Week 5, Make #4: GIF and Remix Culture
+
+**Title:** *Outta there!*  
+**Tools Used:** GIPHY
+
+---
 
 ## The Artifact
-A series of animated GIFs remixing 1920s silent film archives with contemporary generative video interpolations, questioning the boundary between cinematic remix and synthetic erasure.
 
-## Process Notes
-- Sourced public domain clips from Prelinger Archives and Library of Congress.
-- Extracted keyframes and created seamless temporal loops in Photoshop and FFmpeg.
-- Layered subtle generative in-between frames to simulate computational dreaming.
+![Outta there! GIF showing a swirling frog meme with impact lines and a caption](assets/images/week05-outta-there.png)
 
-## Reflection
-Remix culture has historically celebrated grassroots appropriation and pastiche. Generative AI fundamentally reconfigures remixing by automating it inside statistical weights, severing the sample from its original historical context.
+The GIF shows a picture that moves in a continuous swirling motion. The subject remains the same, but the way the photo moves and the effects add dimension and movement. The loop lasts about 1 second and is continuous.
+
+---
 
 ## Attribution & AI Use
-- **Tools used**: FFmpeg, Photoshop, Runway Gen-2
-- **AI prompts**: "Slow camera push into archival black and white film grain, maintaining photographic fidelity."
-- **What AI generated**: 2-second latent frame transitions.
-- **What you changed or decided**: Selected and edited archival source sequences manually to preserve historical integrity.`
+- **Tool used:** GIPHY
+- **What I changed/remixed:** I added in a meme description, the borders to better fit the vibe of the statement, and changed the timing of the effect.`
     },
     {
       id: "week06",
@@ -415,18 +415,19 @@ Generative AI in storytelling is best understood as a **stochastic prism**: it r
     },
     {
       weekNumber: 5,
-      title: "Remix Culture & Authorship",
+      title: "GIF & Remix Culture",
       prompt: "Reflect 5: How does AI alter authorship and remix culture? Who owns AI-made art?",
       status: "Complete",
       date: "Week 05",
-      markdown: `# Week 5 Reflection: Remix Culture & Authorship
+      markdown: `> **Course Prompt:** Reflect 5: How does AI alter authorship and remix culture? Who owns AI-made art?
 
-> **Course Prompt:** How does AI alter authorship and remix culture? Who owns AI-made art?
+# Week 5 Reflection: GIF & Remix Culture
 
-## 1. Key Insight: The Enclosure of the Cultural Commons
-In early remix culture (hip-hop sampling, fan fiction, video collages), artists engaged with specific source texts, and listeners could trace the conversational homage between original and remix. Generative AI fundamentally shifts this paradigm by dissociating millions of individual creative works from their creators and locking them into opaque proprietary model weights.
+When an image repeats instead of standing still, it creates something continuous and gives dimension to something that was originally still. Unlike a still image that people just glance at, looping can draw attention to the subject longer because of how there is constant movement. Depending on what is being looped and the movement, there can be meaning in the loop, as its repetitiveness can change the way things are thought out and at the same time, it leaves room for individual interpretation.
 
-When a corporation charges subscription fees for a model trained without consent on public art, ownership is concentrated in infrastructural capital rather than creative labor. A humanist approach demands defending public cultural commons while guaranteeing artists consent and compensation.`
+The caption and the swirly moving effect shows the human choice in my GIF since it was changed from the original photo. In terms of automation and pattern, the original photo is in a repeated swirl motion. Although I didn’t use AI, I realized how it can complicate ideas of authorship and originality because using a photo that isn’t original is recontextualizing everything. GIF creators are actively reshaping existing media rather than simply consuming and AI is so powerful and automated that we have to reconsider where we draw the boundary between using a tool creatively and having the tool create for us.
+
+The creation of GIFs has the human connection in the meme and idea part, but because AI can help create it, the process of context and authorship may be blurred because it might not be clear where humans make contributions. There’s a difference between using AI as a tool and delegating creation to it.`
     },
     {
       weekNumber: 6,
@@ -606,4 +607,3 @@ Popular culture oscillates between apocalyptic narratives of robotic obsolescenc
     }
   ]
 };
-
